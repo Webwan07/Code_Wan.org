@@ -30,7 +30,7 @@ function copyCode_two(event) {
   event.preventDefault(); // Prevent default link behavior
   
   const textFile = new XMLHttpRequest();
-  textFile.open("GET", "http://drive.google.com/uc?export=view&id=18Psu63g22jhB253dmSViGJVjntdv8gIr", true);
+  textFile.open("GET", "C_code_two.txt", true);
   textFile.onreadystatechange = function() {
     if (textFile.readyState === 4 && textFile.status === 200) {
       const text = textFile.responseText;
