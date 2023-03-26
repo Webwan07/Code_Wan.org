@@ -1,0 +1,3 @@
+Dictionary = {"Josuan": "Hulom"}
+key = next(val for val,_ in Dictionary.items() if val == "Josuan")
+print(key)
