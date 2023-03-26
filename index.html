@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="code-fill.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Code Wan</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+      
+                <div class="profile__data">
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV 
+                    <a download="" href="assets/pdf/seunome.pdf" class="button">
+                        Contact Dev <i class="ri-download-line"></i>
+                    </a>-->
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="https://discord.gg/bFUC6UW35U" target="_blank" class="button button__small button__gray">
+                            <i class="ri-discord-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="https://m.me/j/AbYiqKpe35rLmBky/" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        C Programming
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Python
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img onclick="copyText()" src="project1.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Code #1</span>
+                                    
+                                    <h3 class="projects__title">Hello I'm Wan</h3>
+                                    <a href="#" id="copyCode_one" class="projects__button button button__small">
+                                        <i class="ri-clipboard-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--
+                        insert here
+                        -->
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                                <!--insert for python-->
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Copyright. Josuan 2023
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+        <script src="copy.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </body>
+</html>
