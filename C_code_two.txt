@@ -1,0 +1,3 @@
+float get(float num){
+    return num - (int)num;
+}
