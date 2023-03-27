@@ -45,3 +45,23 @@ function copyCode_two(event) {
   };
   textFile.send(null);
 }
+
+const C_code_three = document.querySelector('#C_3');
+
+C_code_three.addEventListener('click', C_3);
+
+function C_3(event) {
+  event.preventDefault();
+  const textFile = new XMLHttpRequest();
+  textFile.open("GET", "C_code_3.txt", true);
+  textFile.onreadystatechange = function() {
+    if (textFile.readyState === 4 && textFile.status === 200) {
+      const text = textFile.responseText;
+      const dummyInput = document.createElement('textarea');
+      dummyInput.value = text;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummyInput);
+      alert('Code copied to clipboard!');}};
+  textFile.send(null);}
