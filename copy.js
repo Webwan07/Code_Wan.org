@@ -85,3 +85,23 @@ function C_4(event) {
       document.body.removeChild(dummyInput);
       alert('Code copied to clipboard!');}};
   textFile.send(null);}
+  
+  const C_code_five = document.querySelector('#C_5');
+
+C_code_five.addEventListener('click', C_5);
+
+function C_5(event) {
+  event.preventDefault();
+  const textFile = new XMLHttpRequest();
+  textFile.open("GET", "C_code_5.txt", true);
+  textFile.onreadystatechange = function() {
+    if (textFile.readyState === 4 && textFile.status === 200) {
+      const text = textFile.responseText;
+      const dummyInput = document.createElement('textarea');
+      dummyInput.value = text;
+      document.body.appendChild(dummyInput);
+      dummyInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummyInput);
+      alert('Code copied to clipboard!');}};
+  textFile.send(null);}
