@@ -1,0 +1,15 @@
+#include <stdio.h>
+void recursive_func(int n){
+    if(n < 10){
+        printf("Recursive: %d\n", n);
+        recursive_func(n+1);
+    }
+}
+
+int main(){
+    for(int i = 0; i < 10; i++){
+        printf("Loop: %d\n",i);
+    }
+    recursive_func(0);
+    return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+void get_str(char *str1, char *str2){
+    strcpy(str1, "Wan");
+    strcpy(str2, "Wan");
+}
+
+int main(){
+    char get1[10],get2[10];
+    get_str(get1,get2);
+    printf("%s %s",get1,get2);
+    return 0;
+}
